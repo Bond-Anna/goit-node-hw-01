@@ -12,7 +12,7 @@ program.parse(process.argv);
 
 const argv = program.opts();
 
-const contactsOperations = require('./contacts');
+const contactsOperations = require('./controllers/contacts');
 
 // TODO: рефакторить
 const invokeAction = async ({ action, id, name, email, phone }) => {
